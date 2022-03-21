@@ -48,8 +48,9 @@ body{
         justify-content: center;
         align-items: center;
         &:hover{
-            background-color: #5C5858;
-            transition: all .2s linear;
+            background-color: $bagc;
+            transition: all .3s linear;
+            color: white;
         }
     }
 
@@ -68,8 +69,9 @@ body{
         justify-content: center;
         align-items: center;
         &:hover{
-            background-color: #5C5858;
+            background-color: $bagc;
             transition: all .2s linear;
+            color: white;
         }
     }
 }

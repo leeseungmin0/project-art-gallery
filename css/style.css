@@ -71,9 +71,10 @@ body > *:not(script) {
 }
 
 .mid__left .left__content:hover {
-  background-color: #5C5858;
-  -webkit-transition: all .2s linear;
-  transition: all .2s linear;
+  background-color: #AF7732;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+  color: white;
 }
 
 .mid__right {
@@ -103,9 +104,10 @@ body > *:not(script) {
 }
 
 .mid__right .right__content:hover {
-  background-color: #5C5858;
+  background-color: #AF7732;
   -webkit-transition: all .2s linear;
   transition: all .2s linear;
+  color: white;
 }
 
 .bottom__middle {
