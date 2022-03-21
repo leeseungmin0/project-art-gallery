@@ -5,8 +5,8 @@
 }
 body{
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-columns: 1.5fr 2.5fr 1.5fr;
+    grid-template-rows: .5fr 5fr .5fr;
     gap: 2px;
     height: 100vh;
     background-color: #98AFC7;
@@ -40,6 +40,19 @@ body{
     }
 }
 
+.mid__right{
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 3em;
+    gap: 2px;
+    align-items: stretch;
+    .right__content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+    }
+}
 .bottom__left,
 .bottom__middle,
 .bottom__right{

@@ -8,10 +8,10 @@
 body {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 2fr 1fr;
-      grid-template-columns: 1fr 2fr 1fr;
-  -ms-grid-rows: 1fr 4fr 1fr;
-      grid-template-rows: 1fr 4fr 1fr;
+  -ms-grid-columns: 1.5fr 2.5fr 1.5fr;
+      grid-template-columns: 1.5fr 2.5fr 1.5fr;
+  -ms-grid-rows: .5fr 5fr .5fr;
+      grid-template-rows: .5fr 5fr .5fr;
   gap: 2px;
   height: 100vh;
   background-color: #98AFC7;
@@ -44,6 +44,31 @@ body {
 }
 
 .mid__left .left__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+}
+
+.mid__right {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  font-size: 3em;
+  gap: 2px;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.mid__right .right__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
