@@ -24,7 +24,20 @@ body{
 
 .top__menu{
     font-size: 3em;
-    background-color: white;
+    span{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: all .3s linear;
+        &:hover{
+            background-color: $bagc;
+            color: white;
+        }
+    }
+
 }
 
 .mid__center{
