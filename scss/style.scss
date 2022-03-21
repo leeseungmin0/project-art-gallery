@@ -13,6 +13,7 @@ body{
     gap: 2px;
     height: 100vh;
     background-color: $bagc;
+    font-family: 'Rowdies', cursive;
     & > *:not(script) {
         background-color: white;
         color: $bagc;
@@ -23,7 +24,7 @@ body{
 }
 
 .top__menu{
-    font-size: 3em;
+    font-size: 2em;
     span{
         width: 100%;
         height: 100%;
@@ -51,7 +52,7 @@ body{
 .mid__left{
     display: grid;
     grid-template-columns: 1fr;
-    font-size: 3em;
+    font-size: 2em;
     gap: 2px;
     background-color: $bagc;
     align-items: stretch;
@@ -72,7 +73,7 @@ body{
 .mid__right{
     display: grid;
     grid-template-columns: 1fr;
-    font-size: 3em;
+    font-size: 2em;
     gap: 2px;
     background-color: $bagc;
     align-items: stretch;
@@ -97,6 +98,7 @@ body{
     width: 100%;
     overflow: hidden;
     background-color: white;
+    white-space: nowrap;
     span{
         position: absolute;
         width: 200%;

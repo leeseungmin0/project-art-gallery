@@ -16,6 +16,7 @@ body {
   gap: 2px;
   height: 100vh;
   background-color: #AF7732;
+  font-family: 'Rowdies', cursive;
 }
 
 body > *:not(script) {
@@ -33,7 +34,7 @@ body > *:not(script) {
 }
 
 .top__menu {
-  font-size: 3em;
+  font-size: 2em;
 }
 
 .top__menu span {
@@ -70,7 +71,7 @@ body > *:not(script) {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  font-size: 3em;
+  font-size: 2em;
   gap: 2px;
   background-color: #AF7732;
   -webkit-box-align: stretch;
@@ -103,7 +104,7 @@ body > *:not(script) {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  font-size: 3em;
+  font-size: 2em;
   gap: 2px;
   background-color: #AF7732;
   -webkit-box-align: stretch;
@@ -145,6 +146,7 @@ body > *:not(script) {
   width: 100%;
   overflow: hidden;
   background-color: white;
+  white-space: nowrap;
 }
 
 .bottom__middle span {
