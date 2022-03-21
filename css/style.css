@@ -3,6 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background-color: white;
 }
 
 body {
@@ -14,10 +15,12 @@ body {
       grid-template-rows: .5fr 4fr .5fr;
   gap: 2px;
   height: 100vh;
-  background-color: #98AFC7;
+  background-color: #AF7732;
 }
 
-.top__menu {
+body > *:not(script) {
+  background-color: white;
+  color: #AF7732;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,8 +30,18 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.top__menu {
   font-size: 3em;
   background-color: white;
+}
+
+.mid__center {
+  background-image: url(../img/1-art.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
 }
 
 .mid__left {
@@ -38,9 +51,11 @@ body {
       grid-template-columns: 1fr;
   font-size: 3em;
   gap: 2px;
+  background-color: #AF7732;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+  cursor: pointer;
 }
 
 .mid__left .left__content {
@@ -53,7 +68,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: white;
+}
+
+.mid__left .left__content:hover {
+  background-color: #5C5858;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
 }
 
 .mid__right {
@@ -63,9 +83,11 @@ body {
       grid-template-columns: 1fr;
   font-size: 3em;
   gap: 2px;
+  background-color: #AF7732;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+  cursor: pointer;
 }
 
 .mid__right .right__content {
@@ -78,6 +100,16 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.mid__right .right__content:hover {
+  background-color: #5C5858;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.bottom__left,
+.bottom__right {
   background-color: white;
 }
 
@@ -110,7 +142,7 @@ body {
     left: 100%;
   }
   100% {
-    left: -120%;
+    left: -200%;
   }
 }
 
@@ -119,7 +151,7 @@ body {
     left: 100%;
   }
   100% {
-    left: -120%;
+    left: -200%;
   }
 }
 /*# sourceMappingURL=style.css.map */

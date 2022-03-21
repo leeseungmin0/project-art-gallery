@@ -1,7 +1,10 @@
+@import "_variables";
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: white;
 }
 body{
     display: grid;
@@ -9,30 +12,47 @@ body{
     grid-template-rows: .5fr 4fr .5fr;
     gap: 2px;
     height: 100vh;
-    background-color: #98AFC7;
+    background-color: $bagc;
+    & > *:not(script) {
+        background-color: white;
+        color: $bagc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .top__menu{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 3em;
     background-color: white;
 }
 
+.mid__center{
+    background-image: url(../img/1-art.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    
+}
 
 .mid__left{
     display: grid;
     grid-template-columns: 1fr;
     font-size: 3em;
     gap: 2px;
+    background-color: $bagc;
     align-items: stretch;
+    cursor: pointer;
     .left__content{
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: white;
+        &:hover{
+            background-color: #5C5858;
+            transition: all .2s linear;
+        }
     }
+
 }
 
 .mid__right{
@@ -40,15 +60,23 @@ body{
     grid-template-columns: 1fr;
     font-size: 3em;
     gap: 2px;
+    background-color: $bagc;
     align-items: stretch;
+    cursor: pointer;
     .right__content{
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: white;
+        &:hover{
+            background-color: #5C5858;
+            transition: all .2s linear;
+        }
     }
 }
-
+.bottom__left,
+.bottom__right{
+    background-color: white;
+}
 .bottom__middle{
     position: relative;
     display: flex;
@@ -70,6 +98,6 @@ body{
         left: 100%; 
     }
     100% {
-        left: -120%; 
+        left: -200%; 
     } 
 }
