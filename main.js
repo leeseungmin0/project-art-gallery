@@ -26,7 +26,7 @@ btns.forEach((btn, index) => {
 });
 
 
-// let menu = document.querySelector(".top__menu");
-// menu.addEventListener("click", (e) => {
-//     menu.classList.toggle("menu__bar");
-// });
+let top__menu = document.querySelector(".top__right");
+top__menu.addEventListener("click", () => {
+    top__menu.classList.toggle("active");
+});
