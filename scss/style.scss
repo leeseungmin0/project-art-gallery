@@ -53,13 +53,25 @@ body{
     height: 100%;
     background-color: $bagc;
     z-index: 5;
+    
     span{
         position: absolute;
         top: 0;
-        left: 0;
+        right: 0;
+        animation: slide 1s;
     }
 }
 
+@keyframes slide{
+    0%{ 
+        width: 0%;
+        height: 0%;
+    }
+    100%{
+        width: 100%;
+        height: 100%;
+    }
+}
 
 
 .mid__center{
